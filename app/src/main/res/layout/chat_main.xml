@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ListView
+        android:id="@+id/msg_list_view"
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:divider="#0000"
+        android:clickable="false"
+        android:listSelector="#00000000"
+        android:cacheColorHint="#00000000"
+        android:transcriptMode="alwaysScroll"
+
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/back_gray"
+        android:orientation="horizontal">
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_height="match_parent"
+
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/layout_send"
+            >
+
+
+            <EditText
+
+                android:id="@+id/input_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_alignParentLeft="true"
+                android:hint="请输入所要说的话"
+                android:background="@drawable/edit_back"
+
+                />
+
+
+
+
+
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/places_ic_clear"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:id="@+id/edit_clean"
+                android:visibility="gone"
+
+                />
+        </RelativeLayout>
+
+       <RelativeLayout
+           android:layout_width="60dp"
+           android:layout_height="match_parent"
+           android:layout_alignParentBottom="true"
+           android:layout_alignParentRight="true"
+           android:layout_alignParentEnd="true"
+
+           android:gravity="center_vertical"
+           android:id="@+id/layout_send"
+           >
+           <Button
+               android:layout_marginRight="10dp"
+               android:layout_marginTop="5dp"
+               android:layout_marginBottom="5dp"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:background="@drawable/button_selector"
+               android:id="@+id/send"
+               android:visibility="visible"
+               android:text="发送"
+               android:textColor="@color/white"
+               android:enabled="false"
+               />
+
+
+
+       </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/back_gray"
+        >
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/conn_selector"
+            android:id="@+id/connect"
+            android:layout_marginLeft="20dp"
+            />
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/voice_seclector"
+            android:layout_toRightOf="@+id/connect"
+            android:layout_marginLeft="40dp"
+            android:id="@+id/voice"
+
+            />
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/score_seclector"
+            android:layout_toRightOf="@+id/voice"
+            android:layout_marginLeft="40dp"
+            android:id="@+id/score"
+
+            />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/sentence_seclector"
+            android:layout_toRightOf="@+id/score"
+            android:layout_marginLeft="40dp"
+            android:id="@+id/sentence"
+            />
+
+
+    </RelativeLayout>
+
+</LinearLayout>

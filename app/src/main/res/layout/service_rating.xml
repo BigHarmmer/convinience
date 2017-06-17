@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@mipmap/icon_service"
+            android:layout_margin="10dp"
+            />
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:orientation="vertical"
+           >
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_margin="10dp"
+               android:text="客服001"
+               android:id="@+id/score_name"
+               />
+           <RatingBar
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:numStars="5"
+
+               style="@style/Base.Widget.AppCompat.RatingBar.Small"
+               android:id="@+id/rating1"
+               android:layout_marginLeft="10dp"
+               />
+
+       </LinearLayout>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="#aaaaaa"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:rating="0"
+            android:id="@+id/rating2"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/score_level"
+
+            android:text="尚未评分"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:padding="20dp">
+
+        <EditText
+            android:hint="在此写下评论内容"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text=""
+            android:gravity="start"
+            android:textColor="@color/text_color"
+            android:background="@drawable/edit_back"
+            android:id="@+id/score_edit"
+            />
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@drawable/button_selector"
+
+        android:text="提交"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:id="@+id/score_submit"
+        android:enabled="false"
+        />
+
+
+</LinearLayout>

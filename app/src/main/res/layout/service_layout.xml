@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/back_gray">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <GridView
+        android:background="@color/colorWhite"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:numColumns="4"
+
+        android:id="@+id/service_gridview"
+
+        android:padding="10dp"
+        ></GridView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="常见问题"
+            android:padding="10dp"
+
+            />
+
+
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/normal_problem"
+
+        android:background="@color/colorWhite"
+        ></ListView>
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|bottom"
+        app:borderWidth="0dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="50dp"
+        app:backgroundTint="@color/colorWhite"
+        android:src="@mipmap/icon_service"
+        app:elevation="6dp"
+        app:pressedTranslationZ="12dp"
+        android:id="@+id/float_service"
+        />
+
+
+</LinearLayout>

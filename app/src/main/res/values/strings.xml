@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Easy网上便民</string>
+    <string name="search">搜索</string>
+    <string name="searchHistory">搜索历史</string>
+    <string name="clearSearchHistory">清除历史记录</string>
+    <string name="str_search_hint">搜索</string>
+    <string name="str_searchHistory">搜索历史</string>
+    <string name="str_clearSearchHistory">清除历史</string>
+    <drawable name="button_normal">#4fabed</drawable>
+    <drawable name="button_pressed">#4682B4</drawable>
+</resources>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:gravity="center"
+        android:id="@+id/liner_time"
+
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/chat_time"
+
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:gravity="center"
+        android:id="@+id/chat_history"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/chat_hint_bg"
+            android:textColor="@color/white"
+            android:text="以上为以往聊天记录"
+
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        android:id="@+id/chat_left"
+
+        >
+
+
+        <ImageView
+            android:id="@+id/head_left"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="left"
+            android:src="@mipmap/icon_service"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/service_name"
+                android:layout_marginLeft="5dp"
+
+                />
+
+            <LinearLayout
+                android:id="@+id/left_layout"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_gravity="left"
+                android:background="@drawable/left1"
+
+
+                android:orientation="vertical"
+                >
+
+                <TextView
+
+                    android:textSize="15sp"
+                    android:id="@+id/left_msg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    />
+
+                <ListView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/chat_click_list"
+                    android:visibility="gone"
+                    android:divider="@null"
+                    android:listSelector="#00000000"
+                    android:cacheColorHint="#00000000"
+                    >
+
+                </ListView>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:orientation="horizontal"
+
+        android:id="@+id/chat_right"
+        android:gravity="right"
+
+        >
+
+        <LinearLayout
+
+
+            android:gravity="center_vertical"
+            android:id="@+id/right_layout"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_gravity="right"
+
+            android:background="@drawable/right1"
+
+            >
+
+            <TextView
+                android:maxWidth="170dp"
+                android:textSize="15sp"
+                android:id="@+id/right_msg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+
+                />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/head_right"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@mipmap/head_icon"
+            android:layout_gravity="end"/>
+    </LinearLayout>
+
+</LinearLayout>

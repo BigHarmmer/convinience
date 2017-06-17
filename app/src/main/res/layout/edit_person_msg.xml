@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        >
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/back_gray"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:text="姓名"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:textSize="18sp"
+                android:textColor="@color/text_color"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="请输入姓名"
+                android:inputType="textPersonName"
+                android:id="@+id/person_name"
+                android:background="@null"
+
+                />
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/back_gray"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:text="手机号码"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:textSize="18sp"
+                android:textColor="@color/text_color"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="请输入手机号码"
+                android:inputType="phone"
+                android:id="@+id/person_phone"
+                android:background="@null"
+                />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/back_gray"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:text="身份证"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:textSize="18sp"
+                android:textColor="@color/text_color"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="请输入身份证"
+                android:inputType="text"
+                android:id="@+id/person_idcard"
+                android:background="@null"
+                />
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/back_gray"/>
+
+
+    </LinearLayout>
+
+    <Button
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_sure"
+        android:text="确定"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:id="@+id/person_sure"
+        />
+
+</LinearLayout>
